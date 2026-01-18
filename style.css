@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./ChatGPT\ Image\ 3_11_2025\,\ 00_37_06.png');
+    background-color: #090e1a;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 270px;
+    height: 360px;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    font-family: "Inter", sans-serif;
+    color: #E5E7EB;
+    background-color: #090e1a;
+    box-shadow: 0 4px 8px 0 rgba(132, 132, 132, 0.2), 0 6px 20px 0 rgba(132, 132, 132, 0.19);
+}
+
+#title {
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+}
+
+input {
+    display: block;
+    margin-bottom: 13px;
+    border-radius: 4px;
+    background-color: #293044;
+    font-family: "Inter", sans-serif;
+    color: #E5E7EB;
+    font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px #1E293B inset;
+  box-shadow: 0 0 0px 1000px #1E293B inset;
+  -webkit-text-fill-color: #E5E7EB;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+#button {
+    position: absolute;
+    align-self: center;
+    bottom: 15px;
+    background-color: #2b3f5f;
+    border-radius: 8px;
+    height: 36px;
+    width: 130px;
+    font-family: "Inter", sans-serif;
+    color: #E5E7EB;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#valor-imc {
+    display: flex;
+    width: 228px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #E5E7EB;
+    font-size: 15px;
+}
+
+#resultado {
+    display: flex;
+    width: 228px;
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #E5E7EB;
+    font-size: 18px;
+}
