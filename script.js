@@ -23,7 +23,7 @@ const getText = (imc) => {
             if (value.length > 1) {
                 // Insere o ponto após o primeiro dígito
                 // Ex: "165" vira "1" + "." + "65"
-                value = value.slice(0, 1) + '.' + value.slice(1);
+                value = value.slice(0, 1) + ',' + value.slice(1);
             }
 
             // 3. Atualiza o valor do input em tempo real
@@ -34,12 +34,12 @@ const formatarAltura = (valor) => {
     valor = valor.replace(/\D/g, '');
     if (!valor) return 0;
     valor = valor.slice(0, 3);
-    return Number(valor.replace('.', ',')) / 100;
+    return Number(valor) / 100;
 };
 
 altura.addEventListener('blur', () => {
     const valor = formatarAltura(altura.value);
-    if (valor) altura.value = valor.toFixed(2);
+    if (valor) altura.value = valor.toFixed(2).replace('.', ',');
     
 });
 
