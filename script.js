@@ -30,6 +30,13 @@ const getText = (imc) => {
             e.target.value = value;
         });
 
+//  peso.addEventListener('input', function (e) {
+//             // 1. Substitui vírgula por ponto)
+//             let value = e.target.value.replace(',', '.');
+
+//             e.target.value = value;
+//         });
+
 const formatarAltura = (valor) => {
     valor = valor.replace(/\D/g, '');
     if (!valor) return 0;
@@ -48,7 +55,8 @@ const imcCalc = () => {
     return resultado.textContent = "Preencha todos os campos!", numberImc.innerText = " ";
 
     const alturaFormatada = formatarAltura(altura.value);
-    const pesoFormatado = Number(peso.value);
+    const pesoFormatado = Number(peso.value.replace(',', '.'));
+    
 
     const valorImc = (pesoFormatado / (alturaFormatada ** 2)).toFixed(1);
 
