@@ -38,7 +38,7 @@ const formatarAltura = (valor) => {
 };
 
 altura.addEventListener('blur', () => {
-    const valor = formatarAltura(altura.value);
+    const valor = formatarAltura(altura.value.replace('.', ','));
     if (valor) altura.value = valor.toFixed(2);
     
 });
