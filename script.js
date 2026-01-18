@@ -30,13 +30,6 @@ const getText = (imc) => {
             e.target.value = value;
         });
 
-//  peso.addEventListener('input', function (e) {
-//             // 1. Substitui vírgula por ponto)
-//             let value = e.target.value.replace(',', '.');
-
-//             e.target.value = value;
-//         });
-
 const formatarAltura = (valor) => {
     valor = valor.replace(/\D/g, '');
     if (!valor) return 0;
