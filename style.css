@@ -15,7 +15,7 @@
     height: 100vh;
     position: relative;
     background-image: url('./backgroundImage.png');
-    background-color: #090e1a;
+    background-color: #000000;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -51,6 +51,7 @@ label {
 
 input {
     display: block;
+    width: 100%;
     margin-bottom: 13px;
     border-radius: 4px;
     background-color: #293044;
