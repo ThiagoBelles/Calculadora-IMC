@@ -8,10 +8,12 @@
 
 .background {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    position: relative;
     background-image: url('./ChatGPT\ Image\ 3_11_2025\,\ 00_37_06.png');
     background-color: #090e1a;
     background-size: cover;
@@ -24,7 +26,7 @@
     flex-direction: column;
     padding: 20px;
     width: 270px;
-    height: 360px;
+    height: 380px;
     border: 1px solid #334155;
     border-radius: 8px;
     font-family: "Inter", sans-serif;
@@ -35,6 +37,7 @@
 
 #title {
     display: flex;
+    margin-bottom: 15px;
     text-align: center;
     align-self: center;
 }
@@ -109,4 +112,13 @@ select:-webkit-autofill {
     font-family: "Inter", sans-serif;
     color: #E5E7EB;
     font-size: 18px;
+}
+
+#credito {
+    display: flex;
+    position: absolute;
+    bottom: 30px;    
+    font-family: "Inter", sans-serif;
+    color: #E5E7EB;
+    font-size: 16px;
 }
